@@ -489,7 +489,7 @@ img {
 
 .sec-title-two h2:before{
   position: absolute;
-  content: '';
+  /* content: ''; */
   width: 45px;
   height: 2px;
   left: -58px;
@@ -4321,7 +4321,7 @@ h4 a{
 
 .main-footer .widget-section .footer-widget .widget-title h4:before{
   position: absolute;
-  content: '';
+  /* content: ''; */
   width: 45px;
   height: 2px;
   top: 16px;
@@ -12772,3 +12772,4 @@ h4 a{
   display: block;
   height: 550px;
 }
+
