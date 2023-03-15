@@ -2938,6 +2938,47 @@ h4 a{
   margin-right: -15px;
 }
 
+.about-list {
+
+
+}
+
+.about-list ul {
+  padding-top: 20px;
+}
+
+.about-list ul li {
+  font-size: 16px;
+  line-height: 28px;
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 5px;
+  font-weight: 400;
+  z-index: 1;
+}
+
+.about-list ul li::before {
+  position: absolute;
+  left: 0;
+  background-image: url(../images/svg_icons/check.svg);
+  width: 16px;
+  height: 16px;
+  content: '';
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.karta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
 #content_block_one .content-box .sec-title{
   margin-bottom: 27px;
 }
@@ -12693,7 +12734,9 @@ h4 a{
 .contact-style-two:before{
   position: absolute;
   content: '';
-  background: #204669;
+  /* background: #204669; */
+  background: #1f458c;
+  /* background: white; */
   width: 100%;
   height: 100%;
   left: 0px;
@@ -12761,19 +12804,6 @@ h4 a{
 }
 
 
-/** google-map **/
-
-.google-map-section{
-  position: relative;
-  display: block;
-}
-
-#contact-google-map{
-  position: relative;
-  display: block;
-  height: 550px;
-}
-
 
 /* 40 modal */
 .modal {
@@ -12815,8 +12845,23 @@ h4 a{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 200px;
+  height: 50vh;
 
+}
+
+@media screen and (max-width: 768px) {
+  .awords {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70vh;
+  
+  }
+  .awords_img {
+    margin: 0;
+    padding: 5px;
+    height: 100px;
+  }
 }
 
 .team_img {
@@ -12833,3 +12878,5 @@ h4 a{
   top: 50%; 
 
 }
+
+
