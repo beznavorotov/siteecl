@@ -12935,6 +12935,10 @@ label.error {
 
   /* new modal end */
 
+.blok_container {
+  padding: 50px 0 50px 0;
+}
+
 .blok_partner {
     display: flex;
     justify-content: center;
@@ -12945,6 +12949,7 @@ label.error {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 10px 0 10px;
 }
 
 .blok_partner_h1 {
