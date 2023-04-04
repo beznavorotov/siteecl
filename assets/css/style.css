@@ -12976,3 +12976,22 @@ label.error {
   justify-content: center;
   align-items: center;
 }
+
+.name_group_servis {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.btn-accordion {
+  cursor: pointer;
+  padding: 10px;
+  background: none;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
