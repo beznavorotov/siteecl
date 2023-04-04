@@ -12970,3 +12970,9 @@ label.error {
 
   padding-bottom: 50px;
 }
+
+.karta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
