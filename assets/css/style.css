@@ -13022,7 +13022,15 @@ padding: 50px 10px 0px 20px;
   content: "▶";
   color: green;
   padding-right: 5px;
+  
 }
+
+/* .location { */
+
+  /* list-style-image: url("./assets/images/icons/location.png");
+
+  
+} */
 
 .about-list-geographic {
   cursor: pointer;
