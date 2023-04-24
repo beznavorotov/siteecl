@@ -12971,6 +12971,20 @@ label.error {
   padding-bottom: 50px;
 }
 
+.name_truck {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0 0 0 ;
+}
+.img_truck {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+}
+
 .karta {
   display: flex;
   justify-content: center;
@@ -12983,11 +12997,13 @@ label.error {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 40px;
+
   text-transform: uppercase;
   font-weight: bold;
 }
-
+.name_group_servis > H1 {
+  margin: 40px;
+}
 .btn-accordion {
   cursor: pointer;
   padding: 10px;
