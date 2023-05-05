@@ -13062,3 +13062,57 @@ padding: 50px 10px 0px 20px;
 :root {
   --img_1: url(./assets/images/gallery/project-9.jpg);
 }
+
+/* blok delivery to */
+.list_delivery{
+  font-family: 'Arimo', sans-serif ;
+font-size: 20px;
+}
+.list_delivery > li:hover{
+  transform: scale(1.05);
+  transition: 0.3s;
+  padding: 5px;
+
+}
+
+.img_delivery_map:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: 0.3s; 
+
+}
+
+
+.name_delivery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  padding-left: 10px;
+  font-family: 'Arimo', sans-serif ;
+  font-weight: bold;
+}
+
+.text_delivery {
+
+  font-family: 'Arimo', sans-serif ;
+  font-weight: 400;
+  font-size: 18px;
+
+}
+
+.img_delivery{
+  cursor: pointer;
+
+}
+
+.img_delivery:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+.btn_delivery:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
