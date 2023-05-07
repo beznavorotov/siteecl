@@ -100,8 +100,8 @@
                                     </li>
                                     <li><a href="services.html">Послуги</a>
                                     </li>
-                                    <li><a href="team.html">Команда</a>
-                                    </li>                            
+                                    <!-- <li><a href="team.html">Команда</a>
+                                    </li>                             -->
                                     <li><a href="contact.html">Контакти</a></li>
                                 </ul>
                             </div>
@@ -401,29 +401,29 @@
   <div class="modal fade bd-example-modal-lg" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
       <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLongTitle">Зв'язатись з нами</h5>
+        <div class="modal-header bg-color-2 rounded">
+          <h5 class="modal-title text-white rounded" id="exampleModalLongTitle">Зв'язатись з нами</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body">
-            <form method="post" action="sendemail.php" id="contact-form" class="default-form"> 
-                <div class="row clearfix">
-                    <div class="col-lg-6 col-md-6 col-sm-12 form-group">
-                        <input type="text" name="username" placeholder="Введіть Ім'я" required="">
+            <form method="post" action="sendemail.php" id="contact-form" class="form-group"> 
+                <div class="row ">
+                    <div class="col-lg-6 col-md-6 col-sm-12 form-group p-2 ">
+                        <input type="text" name="username" placeholder="Введіть Ім'я" required="required" class="rounded form-control md-textarea" data-error="Please,leave us a message.">
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 form-group">
-                        <input type="email" name="email" placeholder="Введіть Email" required="">
+                    <div class="col-lg-6 col-md-6 col-sm-12 form-group p-2">
+                        <input type="email" name="email" placeholder="Введіть Email" required="required" class="rounded form-control md-textarea" data-error="Please,leave us a message.">
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 form-group">
-                        <input type="text" name="phone" placeholder="Введіть телефон" required="">
+                    <div class="col-lg-6 col-md-6 col-sm-12 form-group p-2">
+                        <input type="text" name="phone" placeholder="Введіть телефон" required="required" class="rounded form-control md-textarea" data-error="Please,leave us a message.">
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 form-group">
-                        <input type="text" name="subject" placeholder="Тема" required="">
+                    <div class="col-lg-6 col-md-6 col-sm-12 form-group p-2">
+                        <input type="text" name="subject" placeholder="Тема" required="required" class="rounded form-control md-textarea" data-error="Please,leave us a message.">
                     </div>
-                    <div class="col-lg-12 col-md-12 col-sm-12 form-group">
-                        <textarea name="message" placeholder="Ваш запит" ></textarea>
+                    <div class="col-lg-12 col-md-12 col-sm-12 form-group p-2">
+                        <textarea type="text" id="message" name="message" rows="5" placeholder="Ваш запит" class="rounded form-control md-textarea" data-error="Please,leave us a message."></textarea>
                     </div>
                     <div class="col-lg-12 col-md-12 col-sm-12 form-group message-btn">
                         <button class="theme-btn style-one" type="submit" name="submit-form">Надіслати</button>
@@ -431,11 +431,7 @@
                 </div>
             </form>
         </div>
-        <!-- <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div> -->
-      </div>
+    </div>
     </div>
   </div>
 
@@ -601,11 +597,7 @@
                     <h3>У нас є найкращі плани та рішення для кожного</h3>
                 </div>
                 <div class="btn-box pull-right">
-                    <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-                        Запит
-                      </button> -->
                     <button class="theme-btn style-two" data-toggle="modal" data-target="#exampleModalCenter">Замовити дзвінок</button>
-                    <!-- <a href="./contact.html" class="theme-btn">Зв'яжіться з нами</a> -->
                 </div>
             </div>
         </div>
@@ -738,222 +730,6 @@
     </section>
     <!-- project-style-three end-->
 
-
-
-
-
-    <!-- project-style-three end -->
-
-
-    <!-- team-style-two -->
-    <!-- <section class="team-style-two bg-color-1">
-        <div class="pattern-layer" style="background-image: url(assets/images/shape/shape-21.png);"></div>
-        <div class="anim-icon">
-            <div class="icon icon-1 rotate-me" style="background-image: url(assets/images/icons/anim-icon-1.png);"></div>
-            <div class="icon icon-2 float-bob-y" style="background-image: url(assets/images/icons/anim-icon-4.png);"></div>
-        </div> 
-        <div class="auto-container">
-            <div class="sec-title-two">
-                <h2>Digital Minds Always Spell Around Creativity</h2>
-            </div>
-            <div class="three-item-carousel owl-carousel owl-theme owl-dots-none">
-                <div class="team-block-two">
-                    <div class="inner-box">
-                        <figure class="image-box">
-                            <img src="assets/images/team/team-5.jpg" alt="">
-                            <ul class="social-links clearfix">
-                                <li><a href="index-4.html"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="index-4.html"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="index-4.html"><i class="fab fa-instagram"></i></a></li>
-                                <li><a href="index-4.html"><i class="fab fa-linkedin-in"></i></a></li>
-                            </ul>
-                        </figure>
-                        <div class="lower-content">
-                            <h3><a href="index-4.html">Юрій Шабаровський</a></h3>
-                            <span class="designation">Засновник</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="team-block-two">
-                    <div class="inner-box">
-                        <figure class="image-box">
-                            <img src="assets/images/team/team-6.jpg" alt="">
-                            <ul class="social-links clearfix">
-                                <li><a href="index-4.html"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="index-4.html"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="index-4.html"><i class="fab fa-instagram"></i></a></li>
-                                <li><a href="index-4.html"><i class="fab fa-linkedin-in"></i></a></li>
-                            </ul>
-                        </figure>
-                        <div class="lower-content">
-                            <h3><a href="index-4.html">Оксана Пащук</a></h3>
-                            <span class="designation">Керівник</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="team-block-two">
-                    <div class="inner-box">
-                        <figure class="image-box">
-                            <img src="assets/images/team/team-7.jpg" alt="">
-                            <ul class="social-links clearfix">
-                                <li><a href="index-4.html"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="index-4.html"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="index-4.html"><i class="fab fa-instagram"></i></a></li>
-                                <li><a href="index-4.html"><i class="fab fa-linkedin-in"></i></a></li>
-                            </ul>
-                        </figure>
-                        <div class="lower-content">
-                            <h3><a href="index-4.html">Анастасія Чебручан</a></h3>
-                            <span class="designation">Керівник</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="team-block-two">
-                    <div class="inner-box">
-                        <figure class="image-box">
-                            <img src="assets/images/team/team-7.jpg" alt="">
-                            <ul class="social-links clearfix">
-                                <li><a href="index-4.html"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="index-4.html"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="index-4.html"><i class="fab fa-instagram"></i></a></li>
-                                <li><a href="index-4.html"><i class="fab fa-linkedin-in"></i></a></li>
-                            </ul>
-                        </figure>
-                        <div class="lower-content">
-                            <h3><a href="index-4.html">Ірина Рогало</a></h3>
-                            <span class="designation">Керівник</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!-- team-style-two -->
-
-
-    <!-- testimonial-section -->
-    <!-- <section class="testimonial-section alternet-3">
-        <div class="auto-container">
-            <div class="sec-title-two centred">
-                <h2>What Happy Clients Says</h2>
-            </div>
-            <div class="testimonial-inner">
-                <figure class="quote-box"><img src="assets/images/icons/quote.png" alt=""></figure>
-                <div class="client-testimonial-carousel owl-carousel owl-theme owl-nav-none owl-dots-none">
-                    <div class="testimonial-block">
-                        <div class="text">
-                            <p>Aspernatur aut odit aut fugit sed quia consequuntur magni dolores eosui ratione voluptatem sequi nesciunt. Neque porro quisquam estm qui dolorem ipsum quia dolor sit amet consectetur, adipisci velit sed quia non numquam eius modi tempora incidunt ut labore et dolore magnay aliquam sd ipsum quaerat voluptatem.</p>
-                        </div>
-                    </div>
-                    <div class="testimonial-block">
-                        <div class="text">
-                            <p>Aspernatur aut odit aut fugit sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam estm qui dolorem ipsum quia dolor sit amet consectetur, adipisci velit sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam sd ipsum quaerat voluptatem.</p>
-                        </div>
-                    </div>
-                    <div class="testimonial-block">
-                        <div class="text">
-                            <p>Aspernatur aut odit aut fugit sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam estm qui dolorem ipsum quia dolor sit amet consectetur, adipisci velit sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam sd ipsum quaerat voluptatem.</p>
-                        </div>
-                    </div>
-                    <div class="testimonial-block">
-                        <div class="text">
-                            <p>Aspernatur aut odit aut fugit sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam estm qui dolorem ipsum quia dolor sit amet consectetur, adipisci velit sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam sd ipsum quaerat voluptatem.</p>
-                        </div>
-                    </div>
-                    <div class="testimonial-block">
-                        <div class="text">
-                            <p>Aspernatur aut odit aut fugit sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam estm qui dolorem ipsum quia dolor sit amet consectetur, adipisci velit sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam sd ipsum quaerat voluptatem.</p>
-                        </div>
-                    </div>
-                    <div class="testimonial-block">
-                        <div class="text">
-                            <p>Aspernatur aut odit aut fugit sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam estm qui dolorem ipsum quia dolor sit amet consectetur, adipisci velit sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam sd ipsum quaerat voluptatem.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="client-thumb-outer">
-                    <div class="client-thumbs-carousel owl-carousel owl-theme owl-nav-none owl-dots-none">
-                        <div class="thumb-item">
-                            <figure class="thumb-box"><img src="assets/images/resource/testimonial-1.png" alt=""></figure>
-                            <div class="info-box">
-                                <h5>Robert Smith</h5>
-                                <span class="designation">Senior Manager</span>
-                            </div>
-                        </div>
-                        <div class="thumb-item">
-                            <figure class="thumb-box"><img src="assets/images/resource/testimonial-2.png" alt=""></figure>
-                            <div class="info-box">
-                                <h5>Christine Eva</h5>
-                                <span class="designation">Senior Manager</span>
-                            </div>
-                        </div>
-                        <div class="thumb-item">
-                            <figure class="thumb-box"><img src="assets/images/resource/testimonial-3.png" alt=""></figure>
-                            <div class="info-box">
-                                <h5>Jhon Doe</h5>
-                                <span class="designation">Senior Manager</span>
-                            </div>
-                        </div>
-                        <div class="thumb-item">
-                            <figure class="thumb-box"><img src="assets/images/resource/testimonial-4.png" alt=""></figure>
-                            <div class="info-box">
-                                <h5>Robert</h5>
-                                <span class="designation">Senior Manager</span>
-                            </div>
-                        </div>
-                        <div class="thumb-item">
-                            <figure class="thumb-box"><img src="assets/images/resource/testimonial-5.png" alt=""></figure>
-                            <div class="info-box">
-                                <h5>Tomas Tom</h5>
-                                <span class="designation">Senior Manager</span>
-                            </div>
-                        </div>
-                        <div class="thumb-item">
-                            <figure class="thumb-box"><img src="assets/images/resource/testimonial-1.png" alt=""></figure>
-                            <div class="info-box">
-                                <h5>Robert Smith</h5>
-                                <span class="designation">Senior Manager</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!-- testimonial-section end -->
-
-
-    
-
-    <!-- clients-section -->
-    <!-- <section class="clients-section alternet-2">
-        <div class="auto-container">
-            <div class="centred">
-                <h2>Наші клієнти</h2>
-            </div>
-            <div class="clients-carousel owl-carousel owl-theme owl-dots-none owl-nav-none">
-                <figure class="client-logo"><a href="./index.html"><img src="./assets/images/clients/clients-1.png" alt=""></a></figure>
-                <figure class="client-logo"><a href="./index.html"><img src="./assets/images/clients/clients-2.png" alt=""></a></figure>
-                <figure class="client-logo"><a href="./index.html"><img src="./assets/images/clients/clients-3.png" alt=""></a></figure>
-                <figure class="client-logo"><a href="./index.html"><img src="./assets/images/clients/clients-4.png" alt=""></a></figure>
-                <figure class="client-logo"><a href="./index.html"><img src="./assets/images/clients/clients-5.png" alt=""></a></figure>
-                <figure class="client-logo"><a href="./index.html"><img src="./assets/images/clients/clients-6.png" alt=""></a></figure>
-                <figure class="client-logo"><a href="./index.html"><img src="./assets/images/clients/clients-7.png" alt=""></a></figure>
-                <figure class="client-logo"><a href="./index.html"><img src="./assets/images/clients/clients-8.png" alt=""></a></figure>
-                <figure class="client-logo"><a href="./index.html"><img src="./assets/images/clients/clients-9.png" alt=""></a></figure>
-                <figure class="client-logo"><a href="./index.html"><img src="./assets/images/clients/clients-10.png" alt=""></a></figure>
-                <figure class="client-logo"><a href="./index.html"><img src="./assets/images/clients/clients-11.png" alt=""></a></figure>
-                <figure class="client-logo"><a href="./index.html"><img src="./assets/images/clients/clients-12.png" alt=""></a></figure>
-                <figure class="client-logo"><a href="./index.html"><img src="./assets/images/clients/clients-13.png" alt=""></a></figure>
-                <figure class="client-logo"><a href="./index.html"><img src="./assets/images/clients/clients-14.png" alt=""></a></figure>
-                <figure class="client-logo"><a href="./index.html"><img src="./assets/images/clients/clients-15.png" alt=""></a></figure>
-
-            </div>
-        </div>
-    </section> -->
-    <!-- clients-section end -->
-
-
     <!-- main-footer -->
     <footer class="main-footer alternet-4">
         <div class="footer-top">
@@ -989,24 +765,7 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- <div class="col-lg-3 col-md-6 col-sm-12 footer-column"> -->
-                            <!-- <div class="footer-widget links-widget">
-                                <div class="widget-title">
-                                    <h4>What We Do</h4>
-                                </div>
-                                <div class="widget-content">
-                                    <ul class="list clearfix">
-                                        <li><a href="index.html">Financial Advice</a></li>
-                                        <li><a href="index.html">Business Planning</a></li>
-                                        <li><a href="index.html">Startup Help</a></li>
-                                        <li><a href="index.html">Investment Strategy</a></li>
-                                        <li><a href="index.html">Management Services</a></li>
-                                        <li><a href="index.html">Market Research</a></li>
-                                        <li><a href="index.html">SEO Optimization</a></li>
-                                    </ul>
-                                </div>
-                            </div> -->
-                        <!-- </div> -->
+
                         <div class="col-lg-4 col-md-6 col-sm-12 footer-column">
                             <div class="footer-widget logo-widget ml-70">
                                 <div class="widget-title mt-3">

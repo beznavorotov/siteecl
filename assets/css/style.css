@@ -13066,7 +13066,7 @@ padding: 50px 10px 0px 20px;
 /* blok delivery to */
 .list_delivery{
   font-family: 'Arimo', sans-serif ;
-font-size: 20px;
+  font-size: 20px;
 }
 .list_delivery > li:hover{
   transform: scale(1.05);
@@ -13094,6 +13094,13 @@ font-size: 20px;
   font-weight: bold;
 }
 
+.text_group_delivery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .text_delivery {
 
   font-family: 'Arimo', sans-serif ;
@@ -13116,3 +13123,5 @@ font-size: 20px;
   transform: scale(1.1);
   transition: 0.3s;
 }
+
+
