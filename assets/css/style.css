@@ -13074,7 +13074,7 @@ padding: 50px 10px 0px 20px;
   font-family: 'Arimo', sans-serif ;
   font-size: 18px;
 }
-.list_delivery > a:hover{
+.list_delivery:hover{
   transform: scale(1.03);
   transition: 0.3s;
   padding: 10px;
