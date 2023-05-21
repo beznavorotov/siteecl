@@ -13133,4 +13133,22 @@ padding: 50px 10px 0px 20px;
   transition: 0.3s;
 }
 
+@media screen and (max-width: 800px) {
+  .btn_country {
+    min-width: 360px;
+  
+  }
+  .flag {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+
+.btn_country:hover {
+  transform: scale(1.3);
+  transition: 0.3s;
+
+
+}
 
