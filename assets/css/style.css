@@ -13152,3 +13152,8 @@ padding: 50px 10px 0px 20px;
 
 }
 
+
+
+.countries:hover {
+  cursor: pointer;
+}
