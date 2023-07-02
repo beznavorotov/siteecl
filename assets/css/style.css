@@ -13157,3 +13157,15 @@ padding: 50px 10px 0px 20px;
 .countries:hover {
   cursor: pointer;
 }
+
+.service_ul {
+  padding-left: 30px;
+
+
+}
+
+.service_ul > li::before {
+  content: "★";
+  color: red;
+  padding-right: 5px;
+}
