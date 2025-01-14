@@ -4039,6 +4039,11 @@ h4 a{
 
 
 /** clients-section **/
+.clients-section_new{
+  position: relative;
+  padding: 40px 0px;
+}
+
 
 .clients-section{
   position: relative;
@@ -8217,7 +8222,7 @@ h4 a{
 
 .about-style-three{
   position: relative;
-  padding: 104px 0px 110px 0px;
+  padding: 50px 0px 50px 0px;
 }
 
 #content_block_ten .content-box .text{
@@ -8618,6 +8623,41 @@ h4 a{
   color: #fff;
   margin: 0px;
 }
+
+.counter-block-client{
+  position: relative;
+
+}
+
+.counter-block-client .icon-box{
+  position: absolute;
+  left: 0px;
+  top: 6px;
+  font-size: 80px;
+  line-height: 80px;
+  color: #fff;
+}
+
+.counter-block-client .count-outer{
+  position: relative;
+  display: block;
+  font-size: 56px;
+  line-height: 60px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 6px;
+}
+
+.counter-block-client h3{
+  position: relative;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 400;
+  color: #fff;
+  margin: 0px;
+}
+
+
 
 
 /** skills-section **/
@@ -12613,12 +12653,12 @@ h4 a{
 
 .contact-information{
   position: relative;
-  padding-top: 93px;
+  padding-top: 40px;
 }
 
 .contact-information .sec-title{
   text-align: center;
-  margin-bottom: 58px;
+  margin-bottom: 28px;
 }
 
 .contact-information .single-item .inner-box{
