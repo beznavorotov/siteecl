@@ -13565,3 +13565,129 @@ align-items: center;
   font-weight: bold;
   color: #333;
 }
+
+
+/* Загальні стилі футера */
+.main-footer {
+  background: #0b2b50;
+  color: #ffffff;
+  padding: 40px 0;
+  font-size: 16px;
+}
+
+/* Верхня частина */
+.footer-top {
+  padding-bottom: 30px;
+}
+
+/* Логотип */
+.footer-logo img {
+  max-width: 150px;
+  margin-bottom: 10px;
+}
+
+/* Опис компанії */
+.footer-description {
+  font-size: 14px;
+  color: #cccccc;
+  line-height: 1.6;
+}
+
+/* Заголовки секцій */
+.footer-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+/* Посилання */
+.footer-links, .footer-contact {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li, .footer-contact li {
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  color: #cccccc;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  color: #f8b400;
+}
+
+/* Контактна інформація */
+.footer-contact i {
+  margin-right: 8px;
+  color: #f8b400;
+}
+
+.footer-contact a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-contact a:hover {
+  color: #f8b400;
+}
+
+/* Соціальні іконки */
+.footer-social {
+  margin-top: 15px;
+}
+
+.footer-social a {
+  display: inline-block;
+  background: #f8b400;
+  color: #0b2b50;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  margin-right: 10px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.footer-social a:hover {
+  background: #ffffff;
+  color: #0b2b50;
+}
+
+/* Нижня частина */
+.footer-bottom {
+  background: #081d38;
+  padding: 10px 0;
+  font-size: 14px;
+  color: #cccccc;
+}
+
+.footer-bottom a {
+  color: #f8b400;
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+  .footer-top .row {
+      text-align: center;
+  }
+
+  .footer-logo img {
+      margin: 0 auto;
+  }
+
+  .footer-social {
+      justify-content: center;
+  }
+}
