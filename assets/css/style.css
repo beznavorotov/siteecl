@@ -13691,3 +13691,95 @@ align-items: center;
       justify-content: center;
   }
 }
+
+
+
+
+
+
+
+
+
+/* Загальні стилі секції */
+.contact-section-new {
+  text-align: center;
+  padding: 60px 20px;
+  background: #f8f9fc;
+}
+
+/* Заголовки */
+.contact-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.contact-subtitle {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Грід для карток */
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Картка контакту */
+.contact-card {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Іконки */
+.contact-icon {
+  font-size: 35px;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+/* Тексти */
+.contact-card-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.contact-card-text {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Кнопка */
+.contact-button {
+  margin-top: 30px;
+}
+
+.btn-contact {
+  background: #ff8c00;
+  color: white;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.btn-contact:hover {
+  background: #e67e00;
+}
