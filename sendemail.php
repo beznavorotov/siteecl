@@ -1,32 +1,42 @@
 <?php
 
-// Define some constants
-define( "RECIPIENT_NAME", "John Doe" );
-define( "RECIPIENT_EMAIL", "admin@eclogistic.com.ua" );
+// Налаштування отримувача
+define("RECIPIENT_NAME", "John Doe");
+define("RECIPIENT_EMAIL", "admin@eclogistic.com.ua");
 
+// Отримання даних з форми та їх валідація
+$userName = isset($_POST['username']) ? filter_var($_POST['username'], FILTER_SANITIZE_STRING) : "";
+$senderEmail = isset($_POST['email']) ? filter_var($_POST['email'], FILTER_SANITIZE_EMAIL) : "";
+$userPhone = isset($_POST['phone']) ? filter_var($_POST['phone'], FILTER_SANITIZE_STRING) : "";
+$userSubject = isset($_POST['subject']) ? filter_var($_POST['subject'], FILTER_SANITIZE_STRING) : "";
+$message = isset($_POST['message']) ? filter_var($_POST['message'], FILTER_SANITIZE_STRING) : "";
 
-// Read the form values
-$success = false;
-$userName = isset( $_POST['username'] ) ? preg_replace( "/[^\s\S\.\-\_\@a-zA-Z0-9]/", "", $_POST['username'] ) : "";
-$senderEmail = isset( $_POST['email'] ) ? preg_replace( "/[^\.\-\_\@a-zA-Z0-9]/", "", $_POST['email'] ) : "";
-$userPhone = isset( $_POST['phone'] ) ? preg_replace( "/[^\s\S\.\-\_\@a-zA-Z0-9]/", "", $_POST['phone'] ) : "";
-$userSubject = isset( $_POST['subject'] ) ? preg_replace( "/[^\s\S\.\-\_\@a-zA-Z0-9]/", "", $_POST['subject'] ) : "";
-$message = isset( $_POST['message'] ) ? preg_replace( "/(From:|To:|BCC:|CC:|Subject:|Content-Type:)/", "", $_POST['message'] ) : "";
+if (!empty($userName) && !empty($senderEmail) && !empty($userPhone) && !empty($userSubject) && !empty($message)) {
+    // Формуємо лист
+    $recipient = RECIPIENT_NAME . " <" . RECIPIENT_EMAIL . ">";
+    $subject = "Новий контакт: $userSubject";
+    $msgBody = "Ім'я: $userName\n";
+    $msgBody .= "Email: $senderEmail\n";
+    $msgBody .= "Телефон: $userPhone\n";
+    $msgBody .= "Тема: $userSubject\n";
+    $msgBody .= "Повідомлення:\n$message\n";
 
-// If all values exist, send the email
-if ( $userName && $senderEmail && $userPhone && $userSubject && $message) {
-  $recipient = RECIPIENT_NAME . " <" . RECIPIENT_EMAIL . ">";
-  $headers = "From: " . $userName . "";
-  $msgBody = " Name: ". $userName . " Email: ". $senderEmail . " Phone: ". $userPhone . " Subject: ". $userSubject . " Message: " . $message . "";
-  $success = mail( $recipient, $headers, $msgBody );
+    // Заголовки
+    $headers = "From: $senderEmail\r\n";
+    $headers .= "Reply-To: $senderEmail\r\n";
+    $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
 
-  //Set Location After Successsfull Submission
-  header('Location: contact.html?message=Successfull');
-}
-
-else{
-	//Set Location After Unsuccesssfull Submission
-  	header('Location: contact.html?message=Failed');	
+    // Відправка листа
+    if (mail($recipient, $subject, $msgBody, $headers)) {
+        header('Location: contact.html?message=Success');
+        exit;
+    } else {
+        header('Location: contact.html?message=Failed');
+        exit;
+    }
+} else {
+    header('Location: contact.html?message=InvalidInput');
+    exit;
 }
 
 ?>
