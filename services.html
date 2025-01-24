@@ -88,7 +88,7 @@
                                 <button type="button" class="search-toggler"><i class="flaticon-search-1"></i></button>
                             </div> -->
                 <div class="btn-box">
-                  <button class="theme-btn" data-toggle="modal" data-target="#exampleModalCenter">Задати питання</button>
+                  <button class="theme-btn" data-toggle="modal" data-target="#contactModal">Задати питання</button>
                   <!-- <a href="contact.html" class="theme-btn">Задати питання</a> -->
                 </div>
               </div>
@@ -613,43 +613,51 @@
 
   <!-- Modal bootstrap-->
   
-  <div class="modal fade bd-example-modal-lg" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-      <div class="modal-content">
-        <div class="modal-header bg-color-2 rounded">
-          <h5 class="modal-title text-white rounded" id="exampleModalLongTitle">Зв'язатись з нами</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      <div class="modal-content shadow-lg rounded">
+        <div class="modal-header bg-primary text-white">
+          <h5 class="modal-title">📩 Зв’яжіться з нами</h5>
+          <button type="button" class="close text-white" data-dismiss="modal" aria-label="Закрити">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-        <div class="modal-body">
-            <form method="post" action="sendemail.php" id="contact-form" class="form-group"> 
-                <div class="row ">
-                    <div class="col-lg-6 col-md-6 col-sm-12 form-group p-2 ">
-                        <input type="text" name="username" placeholder="Введіть Ім'я" required="required" class="rounded form-control md-textarea" data-error="Please,leave us a message.">
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 form-group p-2">
-                        <input type="email" name="email" placeholder="Введіть Email" required="required" class="rounded form-control md-textarea" data-error="Please,leave us a message.">
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 form-group p-2">
-                        <input type="text" name="phone" placeholder="Введіть телефон" required="required" class="rounded form-control md-textarea" data-error="Please,leave us a message.">
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 form-group p-2">
-                        <input type="text" name="subject" placeholder="Тема" required="required" class="rounded form-control md-textarea" data-error="Please,leave us a message.">
-                    </div>
-                    <div class="col-lg-12 col-md-12 col-sm-12 form-group p-2">
-                        <textarea type="text" id="message" name="message" rows="5" placeholder="Ваш запит" class="rounded form-control md-textarea" data-error="Please,leave us a message."></textarea>
-                    </div>
-                    <div class="col-lg-12 col-md-12 col-sm-12 form-group">
-                      <label for="text" class="text-center">Відправляючи заявку ви погоджуєтеся з політикою обробки персональних даних.</label>
-                  </div>
-                    <div class="col-lg-12 col-md-12 col-sm-12 form-group message-btn">
-                        <button class="theme-btn style-one" type="submit" name="submit-form">Надіслати</button>
-                    </div>
-                </div>
-            </form>
+        
+        <div class="modal-body p-4">
+          <form id="contact-form" method="post" action="sendemail.php">
+            <div class="form-row">
+              <div class="col-md-6 mb-3">
+                <label for="username">Ваше ім'я</label>
+                <input type="text" name="username" id="username" class="form-control" placeholder="Введіть ім'я" required>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="example@email.com" required>
+              </div>
+            </div>
+            
+            <div class="form-row">
+              <div class="col-md-6 mb-3">
+                <label for="phone">Телефон</label>
+                <input type="text" name="phone" id="phone" class="form-control" placeholder="+380 99 123 4567" required>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="subject">Тема</label>
+                <input type="text" name="subject" id="subject" class="form-control" placeholder="Тема повідомлення" required>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="message">Ваш запит</label>
+              <textarea name="message" id="message" rows="4" class="form-control" placeholder="Введіть ваш запит..." required></textarea>
+            </div>
+  
+            <div class="form-group text-center">
+              <button type="submit" class="btn btn-primary btn-lg w-100">📨 Надіслати</button>
+            </div>
+          </form>
         </div>
-    </div>
+      </div>
     </div>
   </div>
 
